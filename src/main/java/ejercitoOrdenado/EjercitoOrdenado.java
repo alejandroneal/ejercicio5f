@@ -4,11 +4,20 @@
  */
 package ejercitoOrdenado;
 
+import java.util.Set;
+import soldado.Soldado;
+
 /**
  *
  * @author alejandro
  */
 public class EjercitoOrdenado {
     
-    private 
+    private Set<Soldado> ejercito;
+
+    public EjercitoOrdenado() {
+        
+    }
+    
+    
 }

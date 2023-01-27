@@ -10,7 +10,7 @@ import java.util.Objects;
  *
  * @author alejandro
  */
-public class Soldado {
+public class Soldado implements Comparable<Soldado>{
     
     private String nif;
     private String nombre;
@@ -95,6 +95,9 @@ public class Soldado {
         final Soldado other = (Soldado) obj;
         return Objects.equals(this.nif, other.nif);
     }
-    
-    
+
+    @Override
+    public int compareTo(Soldado o) {
+       return this.nif.compareToIgnoreCase(o.nif);
+    }
 }

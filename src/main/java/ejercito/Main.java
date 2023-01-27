@@ -38,6 +38,10 @@ public class Main {
         System.out.println("Hay " + ejercito.numeroSoldados() + " soldados");
         System.out.println("---------------------------------------------------------------------------------");
         
+        System.out.println("Comprobar si está en el ejército");
+        System.out.println("¿Carlos está en el ejército?: " + ejercito.estaEnEjercito(new Soldado("9123", "Carlos", "Carlitos", "Carlillos", 23)));
+        System.out.println("---------------------------------------------------------------------------------");
+        
         System.out.println("Desmatricular a un soldado");
         System.out.println("En este caso a Antonio");
         ejercito.desmatricularSoldado(new Soldado("1234", "Antonio", "Antonillo", "Antonoso", 21));

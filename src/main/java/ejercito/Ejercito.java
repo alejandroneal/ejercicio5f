@@ -7,6 +7,7 @@ package ejercito;
 import soldado.Soldado;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 /**
@@ -49,5 +50,22 @@ public class Ejercito {
     
     public void desmatricularSoldado(Soldado soldado){
             this.soldados.remove(soldado);
+    }
+    
+    public void motrarEjercitoUno(){
+        //Internamente está usando un objeto de tipo Iterator
+        for (Soldado soldado : soldados) {
+            System.out.println(soldado);
+        }
+    }
+    
+    public void motrarEjercitoDos(){
+        Iterator<Soldado> iterador = soldados.iterator();
+        Soldado aux;
+        
+        while (iterador.hasNext()) {            
+            aux = iterador.next();
+            System.out.println(aux);
+        }
     }
 }

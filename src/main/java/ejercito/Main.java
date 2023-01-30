@@ -46,8 +46,13 @@ public class Main {
         System.out.println("En este caso a Antonio");
         ejercito.desmatricularSoldado(new Soldado("1234", "Antonio", "Antonillo", "Antonoso", 21));
         
-        for (Soldado soldado : ejercito.sacarSoldados()) {
-            System.out.println(soldado);
-        }
+//        for (Soldado soldado : ejercito.sacarSoldados()) {
+//            System.out.println(soldado);
+//        }
+        
+        ejercito.motrarEjercitoUno();
+        System.out.println("---------------------------------------------------------------------------------");
+        ejercito.motrarEjercitoDos();
+        
     }
 }
